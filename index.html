@@ -10,6 +10,8 @@
 </head>
 <body>
     <main>
+        <h1>CAROSELLO DINAMICO VUE JS</h1>
+        <hr>
         <div id="root">
             <section class="container">
                 <div id="principal_img">
@@ -20,8 +22,8 @@
                     </div>
                 </div>
                 <div id="template">
-                    <div class="secondary_img" v-for="post in articoli">
-                        <img :src="post.immagini" class="opacity" alt="">   
+                <div class="secondary_img"  v-for="(post,index) in articoli" :class="index == counter ? 'active' : ''">
+                        <img :src="post.immagini" class="opacity"  alt="">   
                     </div>
                     <a href="#" @click="up" class="icon up"><i class="fas fa-chevron-up"></i></a>
                     <a href="#" @click="down" class="icon down"><i class="fas fa-chevron-down"></i></a>
