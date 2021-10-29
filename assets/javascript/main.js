@@ -29,5 +29,19 @@ const app = new Vue({
                 content:"Lorem ipsum, dolor sit amet consectetur adipisicing elit."
             }
         ]
+    },
+    methods: {
+        up: function up(){
+            if(this.counter <= 0){
+                this.counter = 5
+            }
+            this.counter--
+        },
+        down: function down(){
+            if(this.counter >= 4){
+                this.counter = 0 -1
+            }
+            return this.counter++
+        }
     }
 })
