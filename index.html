@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/stylecss/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div id="root">
+            <section class="container">
+                <div id="principal_img">
+                    <img class="immagine_vetrina" :src="articoli[counter].image" alt="">
+                    <div class="text">
+                        <h1 class="title"></h1>
+                        <h4 class="descrition">
+                        </h4>
+                    </div>
+                </div>
+                <div id="template">
+                    <a href="#" class="icon up"><i class="fas fa-chevron-up"></i></a>
+                    <img class="secondary_img" src="" alt="">
+                    <a href="#" class="icon down"><i class="fas fa-chevron-down"></i></a>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="./assets/javascript/main.js"></script>
+</body>
+</html>
