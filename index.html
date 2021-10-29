@@ -12,16 +12,17 @@
         <div id="root">
             <section class="container">
                 <div id="principal_img">
-                    <img class="immagine_vetrina" :src="articoli[counter].image" alt="">
+                    <img class="immagine_vetrina" :src="articoli[counter].immagini" alt="">
                     <div class="text">
-                        <h1 class="title"></h1>
-                        <h4 class="descrition">
-                        </h4>
+                        <h1 class="title">{{articoli[counter].title}}</h1>
+                        <p class="content">{{articoli[counter].content}}</p>
                     </div>
                 </div>
                 <div id="template">
+                    <div class="secondary_img" v-for="post in articoli">
+                        <img :src="post.immagini" class="secondary_img" alt="">   
+                    </div>
                     <a href="#" class="icon up"><i class="fas fa-chevron-up"></i></a>
-                    <img class="secondary_img" src="" alt="">
                     <a href="#" class="icon down"><i class="fas fa-chevron-down"></i></a>
                 </div>
             </section>
