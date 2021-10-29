@@ -64,3 +64,11 @@
 .down{
     bottom: .4rem;
 }
+/* utility */
+.opacity{
+    filter: brightness(.5);
+}
+.active{
+    filter: brightness(1);
+    border: 1px solid white;
+}
